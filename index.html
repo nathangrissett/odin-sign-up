@@ -12,6 +12,55 @@
         <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Photo by Halie West on Unsplash</a>
     </header>
     <main>
+        <div class="div1">
+            <h2>This is not a real online service! You know you need something 
+                like this in your life to help you realize your deepest dreams. 
+                Sign up <em>now</em> to get started.
+            </h2>
+            <h2>You <em>know</em> you want to.</h2>
+        </div>
+        <div class="div2">
+            <h3>Let's do this!</h3>
+            <form action="" method="get">
+                <div class="input">
+                    <div class="ind">
+                        <label for="fname">FIRST NAME <span>*</span></label>
+                        <input type="text" id="fname" name="fname" required>
+                    </div>
+                    <div class="ind">
+                        <label for="lname">LAST NAME <span>*</span></label>
+                        <input type="text" id="lname" name="lname" required>
+                    </div>
+                </div>
+                <div class="input">
+                    <div class="ind">
+                        <label for="email">EMAIL <span>*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="ind">
+                        <label for="tel">PHONE NUMBER</label>
+                        <input type="tel" id="tel" name="tel"
+                        pattern="^\d{10}$|^\d{3}\s\d{3}\s\d{4}$|^\d{3}-\d{3}-\d{4}$|^\d{3}\.\d{3}\.\d{4}">
+                    </div>
+                </div>
+                <div class="input">
+                    <div class="ind">
+                        <label for="password">PASSWORD <span>*</span></label>
+                        <input type="password" id="password" name="password" required 
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*\-_=+]).{6,20}$">
+                    </div>
+                    <div class="ind">
+                        <label for="confirm-password">CONFIRM PASSWORD <span>*</span></label>
+                        <input type="password" id="confirm-password" name="confirm-password"
+                        required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*\-_=+]).{6,20}$">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="div3">
+            <button type="submit">Create Account</button>
+            <h4>Already have an account? <a href="">Log in</a></h4>
+        </div>
 
     </main>
 </body>
