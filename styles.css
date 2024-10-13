@@ -119,7 +119,8 @@ button {
     margin-bottom: 0.65em;
 }
 
-label {
+label,
+p {
     font-size: 9.5px;
     font-family: sans-serif;
     color: #444;

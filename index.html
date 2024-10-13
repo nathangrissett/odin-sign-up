@@ -21,7 +21,7 @@
         </div>
         <div class="div2">
             <h3>Let's do this!</h3>
-            <form action="" method="get">
+            <form action="" method="get" id="form">
                 <div class="input">
                     <div class="ind">
                         <label for="fname">FIRST NAME <span>*</span></label>
@@ -38,7 +38,7 @@
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="ind">
-                        <label for="tel">PHONE NUMBER</label>
+                        <label for="tel">PHONE NUMBER (ex: XXX-XXX-XXXX)</label>
                         <input type="tel" id="tel" name="tel"
                         pattern="^\d{10}$|^\d{3}\s\d{3}\s\d{4}$|^\d{3}-\d{3}-\d{4}$|^\d{3}\.\d{3}\.\d{4}">
                     </div>
@@ -55,10 +55,12 @@
                         required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*\-_=+]).{6,20}$">
                     </div>
                 </div>
+                <p>Passwords must contain one lowercase letter, one uppercase letter, one number, and one symbol. 
+                    Passwords must be between 6 and 20 characters long.</p>
             </form>
         </div>
         <div class="div3">
-            <button type="submit">Create Account</button>
+            <button type="submit" form="form">Create Account</button>
             <h4>Already have an account? <a href="">Log in</a></h4>
         </div>
 
